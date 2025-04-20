@@ -35,5 +35,16 @@ nav {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    padding: 1rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navRight > ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: medium;
+    font-weight: 500;
 }
