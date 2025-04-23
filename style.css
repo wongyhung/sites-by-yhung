@@ -64,17 +64,17 @@ nav > h1 {
     align-items: center;
 }
 
-.mainHeroLeft {
+.contentContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
 }
-.mainHeroLeft > div > h3 span {
+.mainHero > div > div > h3 span {
     font-family: Pacifico;
 }
 
-.mainHeroLeft > button {
+.homepageButton {
     height: 2.5rem;
     width: 10rem;
     border: none;
@@ -85,15 +85,46 @@ nav > h1 {
     font-weight: 500;
 }
 
-.mainHeroLeft > button:hover {
+.homepageButton:hover {
     box-shadow: 0px 0px 2px 0px black;
 }
 
-.mainHeroLeft > button:active {
+.homepageButton:active {
     box-shadow: inset 0px 0px 3px 0px black;
 }
 
 .mainHero > img {
     height: auto;
     width: 15rem;
+}
+
+.whoIAm {
+    background-color: white;
+    padding: 2rem 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.whoIAmContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+}
+
+.whoIAmContent > img {
+    height: auto;
+    width: 12rem;
+}
+
+.whoIAmContent p {
+    font-size: large;
+}
+
+.buttonAlignRight {
+    display: flex;
+    justify-content: end;
 }
