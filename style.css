@@ -98,7 +98,7 @@ nav > h1 {
     width: 15rem;
 }
 
-.whoIAm {
+.whoIAm, .craftedWith {
     background-color: white;
     padding: 2rem 12rem;
     display: flex;
@@ -142,4 +142,16 @@ nav > h1 {
 .whatIDoContent > img {
     height: auto;
     width: 15rem;
+}
+
+.craftedWithContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem 10rem;
+}
+
+.craftedWithContent img {
+    height: auto;
+    width: 5rem;
 }
