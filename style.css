@@ -277,13 +277,13 @@ nav > h1 {
         filter: invert(33%);
     }
 
-    .navRight ul {
+    #dropdownMenuContainer {
         background-color: white;
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.33);
         padding: 1.5rem;
         border-radius: 15px;
         flex-direction: column;
-        /* display: none; */
+        display: none;
         position: absolute;
         top: 4rem;
         left: 1rem;
