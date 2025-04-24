@@ -42,11 +42,14 @@ nav {
     top: 0;
     z-index: 1000;
     padding: 1rem 2rem;
-    box-shadow: 0px 0px 2px 0px black;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav button {
+    display: none;
 }
 
 nav > .innerContainer {
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,17 +93,17 @@ nav > h1 {
     border: none;
     border-radius: 50px;
     background-color: white;
-    box-shadow: 0px 0px 3px 0px black;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
     font-size: medium;
     font-weight: 500;
 }
 
 .homepageButton:hover {
-    box-shadow: 0px 0px 2px 0px black;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 .homepageButton:active {
-    box-shadow: inset 0px 0px 3px 0px black;
+    box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
 }
 
 .mainHero img {
@@ -111,7 +114,7 @@ nav > h1 {
 .whoIAm {
     background-color: white;
     padding: 2rem 12rem;
-    box-shadow: 0px 0px 2px 0px black;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
 }
 
 .whoIAm > .innerContainer {
@@ -163,8 +166,8 @@ nav > h1 {
 
 .craftedWith {
     background-color: white;
-    padding: 2rem 12rem;
-    box-shadow: 0px 0px 2px 0px black;
+    padding: 2rem 12rem;    
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.10);
 }
 
 .craftedWith > .innerContainer {
@@ -255,6 +258,35 @@ nav > h1 {
     .innerContainer {
         display: flex;
         flex-direction: column;
+    }
+
+    nav button {
+        display: block;
+        height: 3rem;
+        width: 3rem;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        border: none;
+        background-color: white;
+    }
+
+    nav button img {
+        height: auto;
+        width: 100%;
+        filter: invert(33%);
+    }
+
+    .navRight ul {
+        background-color: white;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.33);
+        padding: 1.5rem;
+        border-radius: 15px;
+        flex-direction: column;
+        /* display: none; */
+        position: absolute;
+        top: 4rem;
+        left: 1rem;
     }
 
     .mainHero .innerContainer {
