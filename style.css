@@ -41,8 +41,11 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     padding: 1rem 2rem;
+}
+
+nav > .innerContainer {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,10 +64,13 @@ nav > h1 {
 }
 
 .mainHero {
-    font-size: x-large;
-    padding: 2rem 12rem;
-    display: flex;  
     box-shadow: inset 0px 0px 2px 0px black;
+    padding: 2rem 12rem;
+}
+
+.mainHero > .innerContainer {
+    font-size: x-large;
+    display: flex; 
     gap: 0.5rem;
     justify-content: space-between;
     align-items: center;
@@ -96,12 +102,12 @@ nav > h1 {
     box-shadow: inset 0px 0px 3px 0px black;
 }
 
-.mainHero > img {
+.mainHero img {
     height: auto;
     width: 15rem;
 }
 
-.whoIAm, .craftedWith {
+.whoIAm {
     background-color: white;
     padding: 2rem 12rem;
     display: flex;
@@ -147,6 +153,19 @@ nav > h1 {
     width: 15rem;
 }
 
+.craftedWith {
+    background-color: white;
+    padding: 2rem 12rem;
+}
+
+.craftedWith > .innerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
 .craftedWithContent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -162,6 +181,9 @@ nav > h1 {
 .contactUs {
     box-shadow: inset 0px 0px 2px 0px black;
     padding: 2rem 20rem;
+}
+
+.contactUs > .innerContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,4 +208,24 @@ nav > h1 {
 .contactUs ul img {
     height: auto;
     width: 2rem;
+}
+
+.innerContainer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .mainHero, .whoIAm, .whatIDo, .craftedWith, .contactUs {
+        padding: 2rem 6rem;
+    }
+
+    .craftedWithContent {
+        gap: 2rem 5rem;
+    }
+}
+
+@media (max-width: 800px) {
+
 }
