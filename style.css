@@ -110,6 +110,9 @@ nav > h1 {
 .whoIAm {
     background-color: white;
     padding: 2rem 12rem;
+}
+
+.whoIAm > .innerContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -140,12 +143,15 @@ nav > h1 {
 
 .whatIDo {
     padding: 2rem 12rem;
+    box-shadow: inset 0px 0px 2px 0px black;
+}
+
+.whatIDo > .innerContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    box-shadow: inset 0px 0px 2px 0px black;
 }
 
 .whatIDoContent > img {
@@ -219,6 +225,10 @@ nav > h1 {
 @media (max-width: 1200px) {
     .mainHero, .whoIAm, .whatIDo, .craftedWith, .contactUs {
         padding: 2rem 6rem;
+    }
+
+    .whoIAmContent, .whatIDoContent {
+        gap: 3rem;
     }
 
     .craftedWithContent {
