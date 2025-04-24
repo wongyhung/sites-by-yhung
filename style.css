@@ -68,16 +68,19 @@ nav > h1 {
 }
 
 .mainHero {
-    /* box-shadow: inset 0px 0px 2px 0px black; */
     padding: 2rem 12rem;
 }
 
 .mainHero > .innerContainer {
-    font-size: x-large;
+    font-size: larger;
     display: flex; 
     gap: 0.5rem;
     justify-content: space-between;
     align-items: center;
+}
+
+.mainHero > .innerContainer > .contentContainer > div > p > span {
+    display: inline-block;
 }
 
 .contentContainer {
@@ -148,7 +151,6 @@ nav > h1 {
 
 .whatIDo {
     padding: 2rem 12rem;
-    /* box-shadow: inset 0px 0px 2px 0px black; */
 }
 
 .whatIDo > .innerContainer {
@@ -191,7 +193,6 @@ nav > h1 {
 }
 
 .contactUs {
-    /* box-shadow: inset 0px 0px 2px 0px black; */
     padding: 2rem 20rem;
 }
 
@@ -239,10 +240,6 @@ nav > h1 {
 
     .craftedWithContent {
         gap: 2rem 5rem;
-    }
-
-    .mainHero p {
-        font-size: large;
     }
 }
 
@@ -312,4 +309,59 @@ nav > h1 {
     .craftedWithContent {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+/* Animations */
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mainHero > .innerContainer > .contentContainer > div > h1 {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: appear 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.mainHero > .innerContainer > img {
+    opacity: 0;
+    animation: appear 1s ease-in forwards;
+    animation-delay: 0.5s;
+}
+.mainHero > .innerContainer > .contentContainer > div > h3 {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: appear 1s ease forwards;
+    animation-delay: 1.5s;
+}
+
+#cleanCode {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: appear 1s ease forwards;
+    animation-delay: 2.5s;
+}
+
+#sleekDesign {
+    opacity: 0;
+    transform: translateY(100%);
+    animation: appear 1s ease forwards;
+    animation-delay: 3.5s;
+}
+
+#realResults {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: appear 1s ease forwards;
+    animation-delay: 4.5s;
+}
+
+.mainHero > .innerContainer > .contentContainer > button {
+    opacity: 0;
+    animation: appear 0.5s ease forwards;
+    animation-delay: 5.5s;
 }
