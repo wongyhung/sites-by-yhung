@@ -7,14 +7,14 @@ let isClicked = false;
 dropdownMenuButton.addEventListener("click", (event) => {
     event.stopPropagation(); // Prevent this click from triggering the document click listener
     isClicked = !isClicked;
-    dropdownMenuContainer.style.display = isClicked ? "flex" : "none";
+    dropdownMenuContainer.classList.toggle("visible", isClicked);
 });
 
 // Hides dropdown if user clicks outside
 document.addEventListener("click", (event) => {
     if (!dropdownMenuButton.contains(event.target) && !dropdownMenuContainer.contains(event.target)) {
         isClicked = false;
-        dropdownMenuContainer.style.display = "none";
+        dropdownMenuContainer.classList.remove("visible");
     }
 });
 
@@ -22,6 +22,6 @@ document.addEventListener("click", (event) => {
 window.addEventListener("scroll", () => {
     if (isClicked) {
         isClicked = false;
-        dropdownMenuContainer.style.display = "none";
+        dropdownMenuContainer.classList.remove("visible");
     }
 });

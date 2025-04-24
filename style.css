@@ -316,7 +316,8 @@ nav > h1 {
 @keyframes appear {
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translate(0);
+        transform: scaleY(1);
     }
 }
 
@@ -371,4 +372,16 @@ nav > h1 {
     opacity: 0;
     animation: appear 0.5s ease forwards;
     animation-delay: 5.5s;
+}
+
+#dropdownMenuButton:active {
+    transform: scale(0.9);
+}
+
+#dropdownMenuContainer.visible {
+    display: flex;
+    opacity: 0;
+    transform: scaleY(0.1);
+    transform-origin: top;
+    animation: appear 0.33s ease forwards;
 }
