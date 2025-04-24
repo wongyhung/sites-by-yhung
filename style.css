@@ -42,6 +42,7 @@ nav {
     top: 0;
     z-index: 1000;
     padding: 1rem 2rem;
+    box-shadow: 0px 0px 2px 0px black;
 }
 
 nav > .innerContainer {
@@ -64,7 +65,7 @@ nav > h1 {
 }
 
 .mainHero {
-    box-shadow: inset 0px 0px 2px 0px black;
+    /* box-shadow: inset 0px 0px 2px 0px black; */
     padding: 2rem 12rem;
 }
 
@@ -110,6 +111,7 @@ nav > h1 {
 .whoIAm {
     background-color: white;
     padding: 2rem 12rem;
+    box-shadow: 0px 0px 2px 0px black;
 }
 
 .whoIAm > .innerContainer {
@@ -143,7 +145,7 @@ nav > h1 {
 
 .whatIDo {
     padding: 2rem 12rem;
-    box-shadow: inset 0px 0px 2px 0px black;
+    /* box-shadow: inset 0px 0px 2px 0px black; */
 }
 
 .whatIDo > .innerContainer {
@@ -162,6 +164,7 @@ nav > h1 {
 .craftedWith {
     background-color: white;
     padding: 2rem 12rem;
+    box-shadow: 0px 0px 2px 0px black;
 }
 
 .craftedWith > .innerContainer {
@@ -185,7 +188,7 @@ nav > h1 {
 }
 
 .contactUs {
-    box-shadow: inset 0px 0px 2px 0px black;
+    /* box-shadow: inset 0px 0px 2px 0px black; */
     padding: 2rem 20rem;
 }
 
@@ -234,8 +237,47 @@ nav > h1 {
     .craftedWithContent {
         gap: 2rem 5rem;
     }
+
+    .mainHero p {
+        font-size: large;
+    }
 }
 
 @media (max-width: 800px) {
+    .mainHero, .whoIAm, .whatIDo, .craftedWith, .contactUs {
+        padding: 2rem 3rem;
+    }
 
+    .contentContainer p {
+        font-size: medium;
+    }
+
+    .innerContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainHero .innerContainer {
+        flex-direction: column-reverse;
+    }
+
+    .mainHero > .innerContainer {
+        font-size: large;
+    }
+
+    .whoIAmContent, .whatIDoContent {
+        gap: 1rem;
+    }
+
+    .whoIAmContent > img {
+        width: 8rem;
+    } 
+    
+    .whatIDoContent > img {
+        width: 8rem;
+    }
+
+    .craftedWithContent {
+        grid-template-columns: 1fr 1fr;
+    }
 }
