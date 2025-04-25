@@ -14,6 +14,11 @@ body {
     background-color: #F8F9FA;
 }
 
+.whiteFooter {
+    background-color: white;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+
 *, .primaryTextColor {
     color: #212529;
 }
@@ -384,4 +389,52 @@ nav > h1 {
     transform: scaleY(0.1);
     transform-origin: top;
     animation: appear 0.33s ease forwards;
+}
+
+/* About */
+
+.myStory {
+    padding: 3rem;
+}
+
+.myStory p {
+    font-size: large;
+}
+
+.myStory .innerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.myStory .upperContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.myStory img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 500px;
+}
+
+.myStory .upperContentRight {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.myStory li {
+    margin-left: 2rem;
+    list-style: none;
+}
+
+.semiBoldText {
+    font-weight: 500;
+}
+
+.myStoryTextLink {
+    text-decoration: underline;
+    color: #0D6EFD;
 }
