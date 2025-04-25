@@ -90,7 +90,7 @@ nav > h1 {
     gap: 2rem;
 }
 
-.homepageButton {
+.mainButton {
     height: 2.5rem;
     width: 10rem;
     border: none;
@@ -101,11 +101,11 @@ nav > h1 {
     font-weight: 500;
 }
 
-.homepageButton:hover {
+.mainButton:hover {
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
-.homepageButton:active {
+.mainButton:active {
     box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
 }
 
