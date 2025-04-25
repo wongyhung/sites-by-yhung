@@ -394,17 +394,21 @@ nav > h1 {
 /* About */
 
 .myStory {
-    padding: 3rem;
+    padding: 2rem 3rem;
 }
 
 .myStory p {
-    font-size: large;
+    font-size: medium;
 }
 
 .myStory .innerContainer {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 25px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
 }
 
 .myStory .upperContent {
