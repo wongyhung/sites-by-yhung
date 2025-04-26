@@ -213,6 +213,7 @@ nav > h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .contactUs img {
@@ -502,4 +503,44 @@ nav > h1 {
     .myStory h1 {
         text-align: center;
     }
+}
+
+/* My Work */
+
+.myWork {
+    padding: 1rem 2rem 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.myWork h1 {
+    text-align: center;
+}
+
+.myWork .innerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.myWork > .innerContainer > div {
+    background-color: white;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.myWork img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.imgBoxShadow {
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.75);
 }
