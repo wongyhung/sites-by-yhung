@@ -508,7 +508,7 @@ nav > h1 {
 /* My Work */
 
 .myWork {
-    padding: 1rem 2rem 3rem 2rem;
+    padding: 1rem 3rem 3rem 3rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -519,6 +519,11 @@ nav > h1 {
     justify-content: center;
     align-items: center;
     margin-left: 75.29px;
+}
+
+.clickMe {
+    font-family: Gloria Hallelujah; 
+    font-size: small;
 }
 
 .myWork h1 a > img {
@@ -536,18 +541,18 @@ nav > h1 {
     width: auto;
     position: relative;
     top: -0.5rem;
+    right: -0.25rem;
 }
 
-.myWork h1 p {
+.clickMe {
     position: relative;
     top: -1rem;
-    right: -0.25rem;
+    right: -0.5rem;
 }
 
 .myWork .innerContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 3rem;
 }
 
@@ -576,4 +581,65 @@ nav > h1 {
 
 .imgBoxShadow {
     box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 1000px) {
+    .myWork {
+        gap: 1rem;
+    }
+
+    .myWork .innerContainer {
+        gap: 1.5rem;
+    }
+
+    .myWork .innerContainer {
+        font-size: small;
+    }
+
+    .myWork .innerContainer > a > div {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .myWork .innerContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .myWork .innerContainer > a > div {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .myWork .innerContainer {
+        grid-template-columns: 1fr;
+    }
+    .myWork .innerContainer > a > div {
+        padding: 1.5rem;
+    }
+
+    .clickMe {
+        font-size: x-small;
+    }
+
+    .myWork h1 {
+        font-size: larger;
+    }
+
+    .myWork h1 a img {
+        height: 2rem;
+    }
+
+@media (max-width: 360px) {
+    .myWork {
+        padding: 1rem 2rem 2rem 2rem;
+        gap: 0.75rem;
+    }
+
+    .myWork .innerContainer > a > div {
+        padding: 1rem;
+    }
+}
 }
