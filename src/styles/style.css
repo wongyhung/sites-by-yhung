@@ -515,7 +515,33 @@ nav > h1 {
 }
 
 .myWork h1 {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75.29px;
+}
+
+.myWork h1 a > img {
+    height: 2.5rem;
+    width: auto;
+    transition: transform 0.5s ease 0s;
+}
+
+.myWork h1 a > img:hover {
+    transform: rotate(1080deg) scale(1.2);
+}
+
+.myWork h1 > img {
+    height: 1.5rem;
+    width: auto;
+    position: relative;
+    top: -0.5rem;
+}
+
+.myWork h1 p {
+    position: relative;
+    top: -1rem;
+    right: -0.25rem;
 }
 
 .myWork .innerContainer {
