@@ -206,7 +206,19 @@ nav > h1 {
 }
 
 .contactUs {
-    padding: 2rem 20rem;
+    padding: 2rem 12rem 0rem 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactUs > .copyright {
+    text-align: end;
+    font-size: small;
+    padding: 0.75rem 0;
+    max-width: 1400px;
+    width: 100%;
 }
 
 .contactUs > .innerContainer {
@@ -238,14 +250,18 @@ nav > h1 {
 }
 
 .innerContainer {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
 }
 
 @media (max-width: 1200px) {
-    .mainHero, .whoIAm, .whatIDo, .craftedWith, .contactUs {
+    .mainHero, .whoIAm, .whatIDo, .craftedWith {
         padding: 2rem 6rem;
+    }
+
+    .contactUs {
+        padding: 2rem 6rem 0 6rem;
     }
 
     .whoIAmContent, .whatIDoContent {
@@ -258,8 +274,16 @@ nav > h1 {
 }
 
 @media (max-width: 800px) {
-    .mainHero, .whoIAm, .whatIDo, .craftedWith, .contactUs {
+    .mainHero, .whoIAm, .whatIDo, .craftedWith {
         padding: 2rem 3rem;
+    }
+
+    .contactUs {
+        padding: 2rem 3rem 0 3rem;
+    }
+
+    .contactUs > p {
+        text-align: center;
     }
 
     .contentContainer p {
