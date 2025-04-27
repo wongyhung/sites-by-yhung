@@ -77,9 +77,41 @@
         </div>
     </nav>
     <main>
-        
+        <section class="contactUs" aria-label="Contact page with contact form">
+            <div class="innerContainer">
+                <div class="contactFormContainer">
+                    <h1>Leave me a message. Let's chat!</h1>
+                    <form action="POST">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Kelvent Ramsey" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="kelvent@example.com" required>
+                        </div>
+
+                        <div>
+                            <label for="phone">Phone No. (Optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 012 345 6789">
+                        </div>
+
+                        <div>
+                            <label for="message">Your message</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+
+                        <button type="submit" class="mainButton">Submit Form</button>
+                    </form>
+                </div>
+                <div class="contactUsImg"> <!--for img to resize-->
+                    <img src="../src/images/undraw_contact-us_kcoa.svg" alt="Illustration of various forms of communication">
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="contactUs whiteFooter" aria-label="Contact information">
+    <footer class="whiteFooter" aria-label="Footer with contact information">
         <div class="innerContainer">
             <div class="contentContainer">
                 <h2>Let's <span class="accentText">elevate</span> your brand.</h2>

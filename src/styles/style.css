@@ -205,7 +205,7 @@ nav > h1 {
     width: 5rem;
 }
 
-.contactUs {
+footer {
     padding: 2rem 12rem 0rem 12rem;
     display: flex;
     flex-direction: column;
@@ -213,7 +213,7 @@ nav > h1 {
     align-items: center;
 }
 
-.contactUs > .copyright {
+.copyright {
     text-align: end;
     font-size: small;
     padding: 0.75rem 0;
@@ -221,30 +221,30 @@ nav > h1 {
     width: 100%;
 }
 
-.contactUs > .innerContainer {
+footer > .innerContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
 }
 
-.contactUs img {
+footer > .innerContainer > img {
     height: auto;
     width: 15rem;
 }
 
-.contactUs ul {
+footer ul {
     text-decoration: none;
     list-style: none;
 }
 
-.contactUs li {
+footer li {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.contactUs ul img {
+footer ul img {
     height: auto;
     width: 2rem;
 }
@@ -260,7 +260,7 @@ nav > h1 {
         padding: 2rem 6rem;
     }
 
-    .contactUs {
+    footer {
         padding: 2rem 6rem 0 6rem;
     }
 
@@ -278,12 +278,16 @@ nav > h1 {
         padding: 2rem 3rem;
     }
 
-    .contactUs {
+    footer {
         padding: 2rem 3rem 0 3rem;
     }
 
-    .contactUs > p {
-        text-align: center;
+    footer h2 {
+        font-size: larger;
+    }
+
+    footer a {
+        font-size: small;
     }
 
     .contentContainer p {
@@ -293,6 +297,10 @@ nav > h1 {
     .innerContainer {
         display: flex;
         flex-direction: column;
+    }
+
+    footer .innerContainer {
+        flex-direction: row;
     }
 
     nav button {
@@ -346,6 +354,37 @@ nav > h1 {
 
     .craftedWithContent {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    footer .innerContainer {
+        flex-direction: column;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    footer {
+        padding-top: 1rem;
+    }
+
+    footer .innerContainer > .contentContainer {
+        gap: 1rem;
+    }
+
+    footer .innerContainer > .contentContainer > div {
+        justify-content: center;
+    }
+
+    footer .innerContainer > img {
+        width: 10rem;
+    } 
+
+    .copyright {
+        padding: 0.5rem 0;
+        font-size: x-small;
     }
 }
 
@@ -664,6 +703,125 @@ nav > h1 {
 
     .myWork .innerContainer > a > div {
         padding: 1rem;
+    }
+}
+}
+
+.contactUs {
+    padding: 2rem 5rem;
+}
+
+.contactUs .innerContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.contactUsImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactUsImg img {
+    height: auto;
+    width: 75%;
+}
+
+.contactUs h1 {
+    margin-bottom: 2rem;
+    overflow: visible;
+}
+
+.contactUs form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contactUs form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.contactUs form input {
+    background-color: white;
+    border: none;
+    box-shadow: inset 0px 0px 2px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 0.25rem 0.5rem;
+    width: 300px;
+}
+
+.contactUs form textarea {
+    background-color: white;
+    border: none;
+    box-shadow: inset 0px 0px 2px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 0.25rem 0.5rem;
+    width: 40vw;
+    height: 100px;
+    max-width: 600px;
+}
+
+.contactUs button {
+    margin-top: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .contactUsImg > img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .contactUs {
+        padding: 2rem 4rem;
+    }
+    .contactUs .innerContainer {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .contactUs h1 {
+        font-size: larger;
+    }
+}
+
+@media (max-width: 760px) {
+    .contactUs h1 {
+        text-align: center;
+    }
+    .contactUsImg {
+        display: none;
+    }
+
+    .contactUs .innerContainer {
+        justify-content: center;
+    }
+
+    .contactUs form textarea {
+        width: 100%;
+    }
+
+@media (max-width: 450px) {
+    .contactUs h1 {
+        font-size: large;
+    }
+}
+
+@media (max-width: 350px) {
+    .contactUs h1 {
+        font-size: medium;
+    }
+
+    .contactUs form label {
+        font-size: small;
+    }
+    .contactUs form input {
+        width: 275px;
     }
 }
 }
