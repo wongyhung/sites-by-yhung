@@ -707,11 +707,11 @@ footer ul img {
 }
 }
 
-.contactUs {
+.contactUs, .thankYou {
     padding: 2rem 5rem;
 }
 
-.contactUs .innerContainer{
+.contactUs .innerContainer, .thankYou .innerContainer {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -719,7 +719,7 @@ footer ul img {
 
 .contactUsImg {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 
@@ -730,7 +730,6 @@ footer ul img {
 
 .contactUs h1 {
     margin-bottom: 2rem;
-    overflow: visible;
 }
 
 .contactUs form {
@@ -777,10 +776,10 @@ footer ul img {
 
 @media (max-width: 800px) {
 
-    .contactUs {
+    .contactUs, .thankYou {
         padding: 2rem 4rem;
     }
-    .contactUs .innerContainer {
+    .contactUs .innerContainer, .thankYou .innerContainer {
         flex-direction: row;
         gap: 1rem;
     }
@@ -794,11 +793,12 @@ footer ul img {
     .contactUs h1 {
         text-align: center;
     }
+
     .contactUsImg {
         display: none;
     }
 
-    .contactUs .innerContainer {
+    .contactUs .innerContainer, .thankYou .innerContainer {
         justify-content: center;
     }
 
@@ -807,13 +807,13 @@ footer ul img {
     }
 
 @media (max-width: 450px) {
-    .contactUs h1 {
+    .contactUs h1{
         font-size: large;
     }
 }
 
 @media (max-width: 350px) {
-    .contactUs h1 {
+    .contactUs h1{
         font-size: medium;
     }
 
@@ -824,4 +824,78 @@ footer ul img {
         width: 275px;
     }
 }
+}
+
+.thankYou {
+    padding: 0 10rem;
+}
+
+.thankYouBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.thankYou .innerContainer {
+    justify-content: space-around;
+}
+
+.thankYou .innerContainer .contentContainer {
+    justify-content: space-around;
+}
+
+.thankYou a {
+    font-size: small;
+}
+
+.thankYouBody footer {
+    padding: 0;
+}
+
+.thankYouBody .contactUsImg img {
+    width: 20rem;
+}
+
+.thankYouBody .copyright {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .thankYou {
+        padding: 0 5rem;
+    }
+
+    .thankYouBody .contactUsImg img {
+        width: 15rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .thankYou {
+        padding: 0 2.5rem;
+    }
+
+    .thankYouBody .contactUsImg img {
+        width: 10rem;
+    }
+    
+    .thankYou h1, .thankYou h2 {
+        font-size: large;
+    }
+}
+
+@media (max-width: 760px) {
+    .thankYouBody .contactUsImg {
+        display: block;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .thankYou .innerContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3rem;
+    }
 }

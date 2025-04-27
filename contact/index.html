@@ -79,9 +79,9 @@
     <main>
         <section class="contactUs" aria-label="Contact page with contact form">
             <div class="innerContainer">
-                <div class="contactFormContainer">
+                <div>
                     <h1>Leave me a message. Let's chat!</h1>
-                    <form action="https://formsubmit.co/sitesbyyhung@gmail.com" method="post">
+                    <form action="https://formsubmit.co/6fe6ebb3dea00166985445daf9f0c6e6" method="post">
                         <div>
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="Kelvent Ramsey" required>
@@ -101,6 +101,13 @@
                             <label for="message">Your message</label>
                             <textarea id="message" name="message" required></textarea>
                         </div>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_subject" value="Thanks for reaching out" id="subject">
+                        <input type="hidden" name="_autoresponse" value="Thanks for your message" id="autoresponse">
+                        <input type="hidden" name="_next" value="https://sitesbyyhung.com/contact/thank-you/">
+
 
                         <button type="submit" class="mainButton">Submit Form</button>
                     </form>

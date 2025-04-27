@@ -25,3 +25,14 @@ window.addEventListener("scroll", () => {
         dropdownMenuContainer.classList.remove("visible");
     }
 });
+
+// Contact Form Subject
+
+function updateSubject() {
+    // Get the name input value
+    const name = document.getElementById('name').value;
+
+    // Update the _subject value dynamically
+    document.getElementById('subject').value = `Thanks for reaching out, ${name}!`;
+    document.getElementById('autoresponse').value = `Thanks for your message, ${name}. I'll be in touch! \n\nBest regards,\nYhung`;
+}
