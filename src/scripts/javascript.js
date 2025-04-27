@@ -28,11 +28,14 @@ window.addEventListener("scroll", () => {
 
 // Contact Form Subject
 
-function updateSubject() {
+function updateForm() {
     // Get the name input value
     const name = document.getElementById('name').value;
 
     // Update the _subject value dynamically
     document.getElementById('subject').value = `Thanks for reaching out, ${name}!`;
-    document.getElementById('autoresponse').value = `Thanks for your message, ${name}. I'll be in touch! \n\nBest regards,\nYhung`;
+    document.getElementById('autoresponse').value = `Thanks for your message, ${name}. I'll be in touch! \n\nBest regards,\nYhung`; //not functional atm
 }
+
+// Executes function whenever user types in input
+document.getElementById('name').addEventListener('input', updateForm)
