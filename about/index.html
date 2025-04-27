@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Story | Sites by Yhung</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="../public/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://sitesbyyhung.com/public/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://sitesbyyhung.com/public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://sitesbyyhung.com/public/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="https://sitesbyyhung.com/favicon.ico">
     <link rel="manifest" href="../site.webmanifest">
     <link rel="stylesheet" href="../src/styles/style.css">
     <script src="../src/scripts/javascript.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="canonical" href="https://sitesbyyhung.com/">
+    <meta name="robots" content="index, follow">
 
     <meta name="description" content="Learn about Yhung’s journey into web development and how Sites by Yhung helps small businesses elevate their online presence.">
 
@@ -21,6 +24,8 @@
     <meta property="og:title" content="My Story | Sites by Yhung">
     <meta property="og:description" content="Learn about Yhung’s journey into web development and how Sites by Yhung helps small businesses elevate their online presence.">
     <meta property="og:image" content="https://sitesbyyhung.com/logo.png">
+    <meta property="og:image:alt" content="Sites by Yhung logo">
+
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="My Story | Sites by Yhung">
@@ -30,12 +35,31 @@
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
-          "@type": "WebSite",
-          "name": "Sites by Yhung",
-          "url": "https://sitesbyyhung.com",
-          "logo": "https://sitesbyyhung.com/logo.png"
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://sitesbyyhung.com#organization",
+              "name": "Sites by Yhung",
+              "url": "https://sitesbyyhung.com",
+              "logo": "https://sitesbyyhung.com/logo.png",
+              "sameAs": [
+                "https://wa.me/60146930152",
+                "https://t.me/SitesByYhung",
+                "https://www.linkedin.com/in/yhung-w-a75a501a9/"
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://sitesbyyhung.com#website",
+              "url": "https://sitesbyyhung.com",
+              "name": "Sites by Yhung",
+              "publisher": {
+                "@id": "https://sitesbyyhung.com#organization"
+              }
+            }
+          ]
         }
-    </script>
+        </script>
 </head>
 <body>
     <nav>
@@ -110,20 +134,22 @@
         </section>
     </main>
     <footer class="contactUs whiteFooter" aria-label="Contact information">
-            <div class="innerContainer">
-                <div class="contentContainer">
-                    <h2>Let's <span class="accentText">elevate</span> your brand.</h2>
-                    <ul>
-                        <li><img src="../src/icons/email-outline.svg" alt="Email icon"> <a href="mailto:sitesbyyhung@gmail.com">sitesbyyhung@gmail.com</a></li>
-                        <li><img src="../src/icons/whatsapp.svg" alt="WhatsApp logo"> <a href="https://wa.me/60146930152?text=Hi%20there%2C%20I%20want%20to%20elevate%20my%20brand%2E" target="_blank" rel="noopener noreferrer">+60 14 693 0152</a></li>
-                        <li><img src="../src/icons/telegram-outline.svg" alt="Telegram logo"> <a href="https://t.me/SitesByYhung" target="_blank" rel="noopener noreferrer">Sites By Yhung</a></li>
-                        <li><img src="../src/icons/linkedin.svg" alt="LinkedIn logo"> <a href="https://www.linkedin.com/in/yhung-w-a75a501a9/" target="_blank" rel="noopener noreferrer">Wong Yhung</a></li>
-                    </ul>
-                    <div class="buttonAlignLeft"><a href="../contact/index.html" class="mainButton">Get in touch</a></div>
+        <div class="innerContainer">
+            <div class="contentContainer">
+                <h2>Let's <span class="accentText">elevate</span> your brand.</h2>
+                <ul>
+                    <li><img src="../src/icons/email-outline.svg" alt="Email icon" loading="lazy"> <a href="mailto:sitesbyyhung@gmail.com">sitesbyyhung@gmail.com</a></li>
+                    <li><img src="../src/icons/whatsapp.svg" alt="WhatsApp logo" loading="lazy"> <a href="https://wa.me/60146930152?text=Hi%20there%2C%20I%20want%20to%20elevate%20my%20brand%2E" target="_blank" rel="noopener noreferrer">+60 14 693 0152</a></li>
+                    <li><img src="../src/icons/telegram-outline.svg" alt="Telegram logo" loading="lazy"> <a href="https://t.me/SitesByYhung" target="_blank" rel="noopener noreferrer">Sites By Yhung</a></li>
+                    <li><img src="../src/icons/linkedin.svg" alt="LinkedIn logo" loading="lazy"> <a href="https://www.linkedin.com/in/yhung-w-a75a501a9/" target="_blank" rel="noopener noreferrer">Wong Yhung</a></li>
+                </ul>
+                <div class="buttonAlignLeft">
+                    <a href="contact/index.html" class="mainButton">Get in touch</a>
                 </div>
-                <img src="../src/images/undraw_business-deal_nx2n.svg" alt="Illustration of people shaking hands making a deal">
             </div>
-            <p class="copyright">© 2025 Yhung. Designed & coded by Yhung.</p>
+            <img src="../src/images/undraw_business-deal_nx2n.svg" alt="Illustration of people shaking hands making a deal" loading="lazy">
+        </div>
+        <p class="copyright">© 2025 Yhung. Designed & coded by Yhung.</p>
     </footer>
 </body>
 </html>
